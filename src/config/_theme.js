@@ -1,5 +1,6 @@
 import { createTheme, responsiveFontSizes, StyledEngineProvider, ThemeProvider } from "@mui/material"
 import { useThemeSetting } from "../features"
+import React from "react";
 
 const CustomThemeProvider = ({children}) => {
     const {mode} = useThemeSetting();
