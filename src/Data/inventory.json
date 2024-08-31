@@ -4,7 +4,6 @@
     "quantity": 20,
     "product": {
       "productId": 1,
-      "createdAt": "2022-01-01",
       "description": "High-quality wireless earbuds",
       "category": {
         "categoryId": 1,
@@ -18,6 +17,7 @@
       "cost": 60.00,
       "profitMargin": 0.40
     },
-    "lowStock": 5
+    "lowStock": 5,
+    "expirationDate": "2024-12-8"
   }
 ]
