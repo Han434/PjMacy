@@ -1,0 +1,30 @@
+[
+    {
+      "customer": "John Doe",
+      "orderStatus": "Pending",
+      "products": [
+        {
+          "productId": 1,
+          "description": "High-quality wireless earbuds",
+          "code": "EWB001",
+          "unit": "Piece",
+          "brand": "SoundMaster",
+          "price": 99.99,
+          "quantity": 2
+        },
+        {
+          "productId": 1,
+          "description": "High-quality wireless earbuds",
+          "code": "EWB001",
+          "unit": "Piece",
+          "brand": "SoundMaster",
+          "price": 99.99,
+          "quantity": 2
+        }
+      ],
+      "paymentStatus": "Paid",
+      "createdAt": "2022-01-01",
+      "totalAmount": 199.98,
+      "totalQuantity": 4
+    }
+]

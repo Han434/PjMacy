@@ -5,7 +5,11 @@ import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrow
 import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import Home from '../routes/Home';
-import BrowseProduct from '../routes/BrowseProduct';
+import BrowseProduct from '../pages/order/BrowseProduct';
+import ProductList from '../pages/product/ProductList';
+import InventoryList from '../pages/inventory/InventoryList';
+import Category from '../pages/category/CategoryList'
+import OrderList from '../pages/order/OrderList';
 
 const TopBar = () => {
   const [open, setOpen] = React.useState(false);
@@ -33,24 +37,40 @@ const TopBar = () => {
             </ListItemButton>
           </ListItem>
         </Link>
+        <Divider />
         <Link to='/browseProduct'>
           <ListItem disablePadding>
             <ListItemButton onClick={toggleDrawer(false)}>
-              <ListItemText primary={"Browse Product"} />
+              <ListItemText primary={"Create Order"} />
             </ListItemButton>
           </ListItem>
         </Link>
-        <Link to='/browseProduct'>
+        <Link to='/orderList'>
           <ListItem disablePadding>
             <ListItemButton onClick={toggleDrawer(false)}>
-              <ListItemText primary={"Browse Product"} />
+              <ListItemText primary={"Order"} />
             </ListItemButton>
           </ListItem>
         </Link>
-        <Link to='/browseProduct'>
+        <Divider />
+        <Link to='/category'>
           <ListItem disablePadding>
             <ListItemButton onClick={toggleDrawer(false)}>
-              <ListItemText primary={"Browse Product"} />
+              <ListItemText primary={"Category"} />
+            </ListItemButton>
+          </ListItem>
+        </Link>
+        <Link to='/productList'>
+          <ListItem disablePadding>
+            <ListItemButton onClick={toggleDrawer(false)}>
+              <ListItemText primary={"Product"} />
+            </ListItemButton>
+          </ListItem>
+        </Link>
+        <Link to='/inventoryList'>
+          <ListItem disablePadding>
+            <ListItemButton onClick={toggleDrawer(false)}>
+              <ListItemText primary={"Inventory"} />
             </ListItemButton>
           </ListItem>
         </Link>
@@ -79,7 +99,11 @@ const TopBar = () => {
       </Drawer>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
-        <Route path="/browseProduct" element={<BrowseProduct/>}></Route>
+        <Route path="/browseProduct" element={<BrowseProduct />}></Route>
+        <Route path="/category" element={<Category/>}></Route>
+        <Route path="/productList" element={<ProductList />}></Route>
+        <Route path="/inventoryList" element={<InventoryList />}></Route>
+        <Route path="/orderList" element={<OrderList />}></Route>
       </Routes>
     </React.Fragment>
   )

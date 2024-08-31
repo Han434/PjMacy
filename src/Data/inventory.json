@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "quantity": 20,
+    "product": {
+      "productId": 1,
+      "createdAt": "2022-01-01",
+      "description": "High-quality wireless earbuds",
+      "category": {
+        "categoryId": 1,
+        "categoryName": "Electronics"
+      },
+      "code": "EWB001",
+      "unit": "Piece",
+      "brand": "SoundMaster",
+      "supplier": "TechCorp",
+      "price": 99.99,
+      "cost": 60.00,
+      "profitMargin": 0.40
+    },
+    "lowStock": 5
+  }
+]
